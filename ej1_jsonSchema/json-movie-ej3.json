@@ -1,0 +1,17 @@
+{
+    "title": "Killers of the Flower Moon",
+    "year": 2023,
+    "director": "Martin Scorsese",
+    "genre": ["Drama", "Crimen", "Historia"],
+    "duration": 206,
+    "imdbRating": 7.6,
+    "mainActors": [
+      "Leonardo DiCaprio",
+      "Robert De Niro",
+      "Lily Gladstone"
+    ],
+    "synopsis": "Una serie de asesinatos en la Nación Osage en la década de 1920 desata una gran investigación del FBI.",
+    "inCinemas": true,
+    "premios": [{"año":2023, "titulo":"oscar", "categoria":"best sound", "ganado":"True"}]
+    
+}  

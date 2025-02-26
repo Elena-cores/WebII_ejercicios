@@ -1,0 +1,55 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+        "title": {
+            "type": "string"
+        },
+        "year": {
+            "type": "integer",
+            "minimum": 0
+        },
+        "director": {
+            "type": "array",
+            "items":  { "$ref": "#/$defs/person" }
+        },
+        "genre": {
+            "type": "array",
+            "items": {
+            "type": "string",
+            "enum":[""],
+            "minItems":1,
+            "unique":true
+            }
+        },
+        "$defs": {
+            "person": {
+            "type": "string"
+            }
+        },
+        "duration": {
+            "type": "integer",
+            "minimum": 1
+        },
+        "imdbRating": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 10
+        },
+        "mainActors": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "items":  { "$ref": "#/$defs/person" }
+            }
+        },
+        "synopsis": {
+            "type": "string"
+        },
+        "inCinemas": {
+            "type": "boolean"
+        }
+    },
+    "required": ["title", "year", "director", "genre", "duration", "imdbRating", "mainActors", "synopsis", "inCinemas"]
+}
+  
